@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AjusteSalarial", "AjusteSalarial\AjusteSalarial.csproj", "{A711D4BE-33B4-4A93-AB6A-EBBE60C04485}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReajusteSalarial", "Dissidio\ReajusteSalarial.csproj", "{B876D380-A863-4D09-9C56-915A64FFB6AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A711D4BE-33B4-4A93-AB6A-EBBE60C04485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A711D4BE-33B4-4A93-AB6A-EBBE60C04485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A711D4BE-33B4-4A93-AB6A-EBBE60C04485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A711D4BE-33B4-4A93-AB6A-EBBE60C04485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B876D380-A863-4D09-9C56-915A64FFB6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B876D380-A863-4D09-9C56-915A64FFB6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B876D380-A863-4D09-9C56-915A64FFB6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B876D380-A863-4D09-9C56-915A64FFB6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94C1C683-76E8-42CD-8E77-A68F5DECF4CD}
+	EndGlobalSection
+EndGlobal

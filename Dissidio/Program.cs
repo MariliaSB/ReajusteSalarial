@@ -1,5 +1,5 @@
 ﻿using ReajusteSalarial.Models;
-
+using System.ComponentModel.DataAnnotations;
 
 internal class Program
 {
@@ -93,39 +93,21 @@ internal class Program
                         case "1":
                             foreach (var item in employees)
                             {
-                                Console.WriteLine("Nome: " + item.nameEmployees.ToUpper());
-                                Console.WriteLine("Cargo: " + item.positionEmployees.ToUpper());
-                                Console.WriteLine("Ano de Contratação: " + item.HiringYear);
-                                Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine("Salário: " + item.salaryEmployees.ToString("C"));
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.WriteLine("----------------------------");
+                                imprimirDados(item);
                             }
                             break;
                         case "2":
 
                             foreach (var item in oldEmployees.lista)
                             {
-                                Console.WriteLine("Nome: " + item.nameEmployees.ToUpper());
-                                Console.WriteLine("Cargo: " + item.positionEmployees.ToUpper());
-                                Console.WriteLine("Ano de Contratação: " + item.HiringYear);
-                                Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine("Salário: " + item.salaryEmployees.ToString("C"));
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.WriteLine("----------------------------");
+                                imprimirDados(item);
                             }
                             break;
                         case "3":
 
                             foreach (var item in newEmployees.lista)
                             {
-                                Console.WriteLine("Nome: " + item.nameEmployees.ToUpper());
-                                Console.WriteLine("Cargo: " + item.positionEmployees.ToUpper());
-                                Console.WriteLine("Ano de Contratação: " + item.HiringYear);
-                                Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine("Salário: " + item.salaryEmployees.ToString("C"));
-                                Console.ForegroundColor = ConsoleColor.White;
-                                Console.WriteLine("----------------------------");
+                                imprimirDados(item);
                             }
                             break;
                     }
@@ -143,4 +125,14 @@ internal class Program
         }
     }
 
+    private static void imprimirDados(Employees item)
+    {
+        Console.WriteLine("Nome: " + item.nameEmployees.ToUpper());
+        Console.WriteLine("Cargo: " + item.positionEmployees.ToUpper());
+        Console.WriteLine("Ano de Contratação: " + item.HiringYear);
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Salário: " + item.salaryEmployees.ToString("C"));
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("----------------------------");
+    }
 }
